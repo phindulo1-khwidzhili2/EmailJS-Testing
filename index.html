@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Company</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            position: relative;
+            animation: moveRight 10s linear infinite;
+
+          
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translateX(100%);
+            }
+            33% {
+                transform: translateX(0);
+            }
+            66% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+        .gallery-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .gallery img{
+            max-width: 20%;
+                max-height: 200px;
+                margin: 5px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"  class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+
+           
+            <div class="container">
+                <h2>Khwidzhili-IT-Group</h2>
+                <hr><p>Your trusted partner in innovative IT solutions. Khwidzhili-IT-Group, we aim to empower businesses with 
+                    technology that drives success and efficiency.</p>
+                <hr/>
+                <a href="services.html" class="btn">Explore Services</a>
+                <a href="contact.html" class="btn">Contact Us>>></a>
+
+
+                
+            </div>
+        </section>
+
+        <section id="introduction">
+            <div class="container">
+                <h2>Who We Are</h2>
+                <p>We are a team of passionate IT professionals committed to delivering exceptional technology solutions.
+                     Our expertise spans custom IT-Support, Cloud solutions, and IT consulting, ensuring your business 
+                     stays ahead in a competitive market. Whether you need a team to level up your digital product, a team to level 
+                     up your own Support teams’ delivery, or a team to come alongside your business to level 
+                    up your operations, we’re ready to tailor a team from our talented staff.</p>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Our Work</h2>
+                <div class="gallery">
+
+                   
+                    <img src="images/Pic4.jpg" alt="Project 1">
+                    <img src="images/pic6.jpg" alt="Project 2">
+                    <img src="images/pic7.jpeg" alt="Project 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tech Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
